@@ -1,0 +1,26 @@
+.landing-banner {
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  padding: 100px 0;
+}
+.banner {
+  background:linear-gradient(to top, rgba(0, 0, 0, .5), 
+    rgba(0, 0, 0, 0)), 
+  url(../image/picjumbo-bg5.png) no-repeat;
+}
+.text-white {
+  color: #fff;
+}
+.banner-heading {
+  font-size: 44px;
+  letter-spacing: -2;
+  font-weight: 200;
+  font-family: cursive;
+}
+.section-space {
+  padding: 75px 0;
+}
+.banner-globe {
+  font-size: 60px;
+}
