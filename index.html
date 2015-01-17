@@ -6,6 +6,8 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/responsive.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/lib/animate.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="assets/css/lib/jquery.bxslider.css" type="text/css" media="all" />
+
   <script src="assets/js/lib/jquery-1.11.0.min.js"></script>
 </head>
 <title>
@@ -30,16 +32,21 @@ Gautam Pandey | home
     </div>
   </div>
 </section>
-<section class="used-tech animated hiding" data-animation="fadeInDown" data-delay="500">
+<section class="used-tech">
   <div class="container">
-   <ul class="list-inline text-center">
-    <li class="col-sm-2 col-xs-12 animated hiding" data-animation="fadeInDown" data-delay="500"><h2>As we used</h2></li>
-    <li class="col-sm-2 col-xs-4 animated hiding" data-animation="fadeInDown" data-delay="500"><img src="assets/image/HTML5_Logo.png" alt="html5"></i></li>
-    <li class="col-sm-2 col-xs-4 animated hiding" data-animation="fadeInDown" data-delay="500"><img src="assets/image/css3.png" alt="css3"></i></li> 
-    <li class="col-sm-2 col-xs-4 animated hiding" data-animation="fadeInDown" data-delay="500"><img src="assets/image/bootstrap.png" alt="bootstrap"></li>
-    <li class="col-sm-2 col-xs-4 animated hiding" data-animation="fadeInDown" data-delay="500"><img src="assets/image/jquery.png" alt="jquery"></li>
-    <li class="col-sm-2 col-xs-4 animated hiding" data-animation="fadeInDown" data-delay="500"><img src="assets/image/angular.png" alt="angular"></li>
-  </div>
+    <div class="col-sm-2 text-center">
+     <h5>As we used</h5>
+   </div>
+    <div class="col-sm-8">
+      <div class="logos client-slider">
+        <div class="slide"><img src="assets/image/HTML5_Logo.png" alt="html5"></div>
+        <div class="slide"><img src="assets/image/css3.png" alt="css3"></div> 
+        <div class="slide"><img src="assets/image/bootstrap.png" alt="bootstrap"></div>
+        <div class="slide"><img src="assets/image/jquery.png" alt="jquery"></div>
+        <div class="slide"><img src="assets/image/angular.png" alt="angular"></div>
+      </div>
+    </div>
+</div>
 </section>
 <section class="section-space animated hiding" data-animation="fadeInDown" data-delay="500">
   <div class="container">
@@ -93,6 +100,9 @@ Gautam Pandey | home
     </div>
   </section>
   <section class="section-space">
+    <div class="container">
+      <h1 class="text-center">In Progress<br><small>Comming Soon...</small></h1>
+    </div>
   </section>
 <script>
 function animationHover(element, animation){
@@ -130,5 +140,21 @@ $(document).ready(function(){
 <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/lib/jquery.appear.js"></script>
 <script type="text/javascript" src="assets/js/scripts.js"></script>
+<script type="text/javascript" src="assets/js/lib/jquery.bxslider.min.js"></script>
+<script>
+$(document).ready(function(){
+  $('.client-slider').bxSlider({
+    slideWidth: 100,
+    minSlides: 2,
+    maxSlides: 5,
+    slideMargin: 10,
+    infiniteLoop: true,
+    pager:false,
+    auto:true,
+    autoControls: true,
+    moveSlides: 3,
+  });
+});
+  </script>
 
 </body>

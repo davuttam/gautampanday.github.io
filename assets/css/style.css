@@ -66,3 +66,14 @@
   url(../image/alt-banner.jpg) no-repeat;
   background-attachment: fixed;
 }
+.bx-wrapper {
+  border: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+.bx-wrapper img {
+  max-width: inherit;
+}
+.bx-viewport img {
+  height: 70px;
+}
