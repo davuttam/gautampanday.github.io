@@ -3,15 +3,15 @@
 }
 
 .landing-banner {
-  background-size: cover;
-  background-position: center;
   min-height: 680px;
   padding: 30px 0;
-}
-.banner {
   background:linear-gradient(to top, rgba(0, 0, 0, .5), 
     rgba(0, 0, 0, 0)), 
   url(../image/banner.png) no-repeat;
+}
+.banner {
+  background-size: cover;
+  background-position: center;
 }
 .text-white {
   color: #fff;
@@ -37,9 +37,6 @@
  padding: 12px 0;
  color: #fff;
 }
-.used-tech img {
-  height: 65px;
-}
 .mrt-15 {
   margin-top: 15px;
 }
@@ -51,4 +48,21 @@
 .intro {
   font-size: 60px;
   line-height: 54px;
+}
+.hiding {
+  opacity: 0;
+}
+.visible {
+  opacity: 1;
+}
+.motto-icon {
+  font-size: 43px;
+  font-weight:bold;
+}
+.alt-banner {
+  min-height:500px;
+  background:linear-gradient(to top, rgba(0, 0, 0, .5), 
+    rgba(0, 0, 0, 0)), 
+  url(../image/alt-banner.jpg) no-repeat;
+  background-attachment: fixed;
 }
