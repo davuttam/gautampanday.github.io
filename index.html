@@ -11,12 +11,33 @@
 Gautam Pandey | home
 </title>
 <body>
-<section class="landing-banner banner animated bounce">
+<section class="landing-banner banner">
   <div class="container">
-    <div class="text-center section-space">
-      <span class="glyphicon glyphicon-globe banner-globe text-white animated bounce" id="logo"></span>
-      <h1 class="text-white text-center banner-heading animated fadeInLeftBig">Designer(Gautam) Work is in Progress</h1>
+    <div class="profile-name">
+    <span class="glyphicon glyphicon-globe text-white animated bounce logo text-center"></span>
+      <h1 class="text-white animated fadeInDownBig">Gautam Pandey<br><small>Web Designer/Developer</small></h1>
     </div>
+    <br>
+    <br>
+    <br>
+    <div class="col-sm-6">
+      <img src="assets/image/gautam.jpg" class="profile-img-set" alt="gautam">
+    </div>
+    <div class="col-sm-6">
+      <h1 class="text-white intro animated fadeInDownBig">Hello,<br><small class="text-white">a bit about me:</small></h1>
+      <p class="text-white animated fadeInDownBig">I spend most of my time coding; I love to build responsive design, illustration and passionate for coding. I always love my work. I'm currently working with world's largest startup <strong>Openlabs Technologies & Consulting (P) Ltd.</strong>I just loved my time working in Openlabs</p>
+    </div>
+  </div>
+</section>
+<section class="used-tech">
+  <div class="container">
+   <ul class="list-inline text-center">
+    <li class="col-sm-2 col-xs-12 animated fadeInLeftBig"><h2>As we used</h2></li>
+    <li class="col-sm-2 col-xs-4 animated fadeInLeftBig"><img src="assets/image/HTML5_Logo.png" alt="html5"></i></li>
+    <li class="col-sm-2 col-xs-4 animated fadeInLeftBig"><img src="assets/image/css3.png" alt="css3"></i></li> 
+    <li class="col-sm-2 col-xs-4 animated fadeInLeftBig"><img src="assets/image/bootstrap.png" alt="bootstrap"></li>
+    <li class="col-sm-2 col-xs-4 animated fadeInLeftBig"><img src="assets/image/jquery.png" alt="jquery"></li>
+    <li class="col-sm-2 col-xs-4 animated fadeInLeftBig"><img src="assets/image/angular.png" alt="angular"></li>
   </div>
 </section>
 <script>
@@ -34,19 +55,19 @@ function animationHover(element, animation){
         });
 }
 function animationClick(element, animation){
-    element = $(element);
-    element.click(
-        function() {
-            element.addClass('animated ' + animation);         
+  element = $(element);
+  element.click(
+    function() {
+      element.addClass('animated ' + animation);         
             //wait for animation to finish before removing classes
             window.setTimeout( function(){
-                element.removeClass('animated ' + animation);
+              element.removeClass('animated ' + animation);
             }, 2000);          
- 
-        });
+
+          });
 }
 $(document).ready(function(){
-  $('#logo').each(function() {
+  $('.logo').each(function() {
     animationHover(this, 'wobble');
     animationClick(this, 'rotateIn');
   });
