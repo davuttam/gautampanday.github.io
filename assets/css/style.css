@@ -14,7 +14,7 @@
   background-position: center;
 }
 .text-white {
-  color: #fff;
+  color: #fff !important;
 }
 .profile-name {
   margin-left: 5%;
@@ -60,7 +60,6 @@
   font-weight:bold;
 }
 .alt-banner {
-  min-height:500px;
   background:linear-gradient(to top, rgba(0, 0, 0, .5), 
     rgba(0, 0, 0, 0)), 
   url(../image/alt-banner.jpg) no-repeat;
